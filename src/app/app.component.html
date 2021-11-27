@@ -1,0 +1,6 @@
+<div>
+    <app-navegacion [ngClass]="{'d-none' : router.url == '/error'}"></app-navegacion>
+    <div [ngClass]="{'container mt-3' : router.url != '/error'}">
+        <router-outlet></router-outlet>
+    </div>
+</div>

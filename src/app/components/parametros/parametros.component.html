@@ -1,0 +1,17 @@
+<div>
+    <h1>Página de parametros con ID {{ id }}</h1>
+
+    <p>Como podemos observar en la URL, actualmente estamos en la ruta: (localhost:4200/parametros/{{ id }})</p>
+
+    <p>En nuestro fichero de rutas (app.routing.ts) hace referencia a: <code>path: 'parametros/:id', component: ParametrosComponent</code></p>
+
+    <p>Con esto nos mostrará lo que tenga el HTML que hemos definido en el fichero: <samp>parametros.component.ts</samp></p>
+
+    <p>En esta URL le tenemos que pasar un parametro (en este caso el ID) que será el que muestre una cosa u otra dependiendo de dicho parametro.</p>
+
+    <p>Podemos pasarle el parametro de dos maneras diferentes:</p>
+        <ul>
+            <li><code>[routerLink]="['parametros/1']</code></li>
+            <li><code>[routerLink]="['parametros', 2]</code></li>
+        </ul>
+</div>

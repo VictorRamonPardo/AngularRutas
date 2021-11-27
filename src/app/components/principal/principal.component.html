@@ -1,0 +1,14 @@
+<nav class="nav nav-pills nav-fill mb-2">
+    <a class="nav-link" [routerLink]="['./primerhijo']" routerLinkActive="active">Hijo 1</a>
+    <a class="nav-link" [routerLink]="['./segundohijo']" routerLinkActive="active">Hijo 2</a>
+</nav>
+
+<p>Como podemos observar en la URL, actualmente estamos en la ruta: (localhost:4200/anidadas)</p>
+
+<p>En nuestro fichero de rutas (app.routing.ts) hace referencia a: <code>path: 'anidadas', component: AnidadasComponent</code></p>
+
+<p>Con esto nos mostrará lo que tenga el HTML que hemos definido en el fichero: <samp>anidadas.component.ts</samp></p>
+
+<p>Al tratarse de rutas que tienen hijos, nos mostrará debajo lo que tengan los hijos cuando navegemos a ellos</p>
+
+<router-outlet></router-outlet>
